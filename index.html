@@ -83,11 +83,19 @@ Collaborators: X and Y
   </form>
 </div>
   
-  <script>
+<script>
     
+function submitForm() {
+    let firstName = document.getElementById('first-name')
+    let lastName = document.getElementById('last-name')
     
-
-
+    let message = "Hello" + firstName + " " + lastName
+    
+    console.log(message)
+}
+      
+<script> 
+   
 </body>
 
 </html>
