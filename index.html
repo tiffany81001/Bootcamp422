@@ -93,7 +93,13 @@ function submitForm(){
     let newDiv = document.createElement("p");
     let newContent = document.createTextNode(message);
     
-    console.log(newContent)
+    let parent = document.getElementsByClass("flex-outer")[0]
+    
+    newP.appendChild(newContent)
+   
+    parent.prepend(newP);
+    
+    console.log(newP)
     
     //console.log(message)
 }
