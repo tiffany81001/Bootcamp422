@@ -86,16 +86,16 @@ Collaborators: X and Y
 <script>
     
 function submitForm(){
-    let firstName = document.getElementById('first-name');
-    let lastName = document.getElementById('last-name');
+    let firstName = document.getElementById('first-name').value;
+    let lastName = document.getElementById('last-name').value;
     
     let message = "Hello" + firstName + " " + lastName;
-    let newDiv = document.createElement("p");
+    let newP = document.createElement('p');
     let newContent = document.createTextNode(message);
     
-    let parent = document.getElementsByClass("flex-outer")[0]
+    let parent = document.getElementsByClassName("flex-outer")[0]
     
-    newP.appendChild(newContent)
+    newP.appendChild(newContent);
    
     parent.prepend(newP);
     
